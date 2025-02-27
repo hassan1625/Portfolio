@@ -26,7 +26,7 @@ export default function ProjectsRfm(){
                                 <div className='project-card pos-relative' >
                                     <a className='project-link' href={slide.alt} target="_blank" aria-label={slide.title}>
                                         <img className='project-image' src={slide.image} alt={slide.title} />
-                                        <span className='type-badge'>{slide.type}</span>
+                                        <span className='type-badge color-white'>{slide.type}</span>
                                         <p className='project-title color-black'>{slide.title}</p>
                                     </a>
                                 </div>
