@@ -193,6 +193,9 @@ h2.journey-designation {
     width: 48%;
     margin: 0 auto;
 }
+p.social-icons {
+    margin: 1rem 0;
+}
 .social-icons a img {
     width: 1.5rem;
 }
@@ -341,9 +344,6 @@ h2.journey-designation {
     }
     .footer-description {
         text-align: justify;
-    }
-    p.social-icons {
-        margin: 1rem 0;
     }
     .tech-stack {
         padding: 1rem 0;
