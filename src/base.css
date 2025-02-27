@@ -1,0 +1,351 @@
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex-start{
+    justify-content: flex-start;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}
+.width-100{
+    width: 100%;
+}
+.width-50{
+    width: 50%;
+}
+.fw-7{
+    font-weight: 700;
+}
+.background-white{
+    background: #fff;
+}
+.background-black{
+    background: #000;
+}
+.color-black{
+    color:#000;
+}
+.color-white{
+    color: #fff;
+}
+header {
+    position: relative;
+    z-index: 10;
+}
+.header-wrapper {
+    padding: 1rem 3rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.dev-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+.nav-list{
+    list-style: none;
+    padding: 0;
+}
+.pos-relative{
+    position: relative;
+}
+.image {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #101010ed;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+}
+.hero-banner-content {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    transform: translate(-10%,-40%);
+    z-index: 5;
+    text-align: start;
+}
+.hero-banner-content h3 {
+    font-size: 30px;
+    margin: 0;
+}
+.hero-banner-content h2 {
+    font-size: 40px;
+    margin: 0;
+}
+.hero-banner-content p {
+    font-size: 20px;
+    margin: 0;
+}
+.portfolio-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    transform: translate(0px, 0px);
+}
+.portfolio-img img {
+    width: 20rem;
+    height: 100%;
+    object-fit: cover;
+}
+.overview-wrapper , .tech-stack-wrapper , .project-container , .experience-wrapper , .experience-journey-wrapper , .projects-rfm-wrapper{
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.experience-content {
+    padding: 2rem 0;
+}
+.skill {
+    text-align: center;
+    background-color: rgb(7, 20, 31);
+    border-radius: 15px;
+    height: 15rem;
+    width: 20%;
+}
+.skill-icon img , .tech-skill img{
+    width: 4rem;
+    height: 4rem;
+}
+.overview-content {
+    text-align: start;
+}
+.text-start{
+    text-align: start;
+}
+.text-end{
+    text-align: end;
+}
+.text-center{
+    text-align: center;
+}
+img.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 4/6;
+}
+span.type-badge {
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    transform: translate(-3%, -1%);
+    background: #000;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 0px 15px;
+    line-height: 25px;
+    border: 1px solid #fff;
+}
+p.project-title {
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    line-height: 2;
+    text-transform: capitalize;
+}
+span.journey-line {
+    display: block;
+    width: 0.6px;
+    height: 63px;
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    background: rgb(255, 255, 255);
+}
+h2.journey-designation {
+    margin: 0;
+}
+.journey-data {
+    width: 60%;
+    border: 1px solid white;
+    margin-bottom: 4rem;
+    padding: 0.8rem 1rem;
+}
+.footer-wrapper {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 5rem 0 5rem;
+}
+.footer-content {
+    width: 48%;
+    margin: 0 auto;
+}
+.social-icons a img {
+    width: 1.5rem;
+}
+.projects-rfm {
+    width: 16rem;
+}
+.rfm-child{
+    margin-right: 1.5rem;
+}
+.overview-content {
+    width: 80%;
+    text-align: justify;
+}
+.overview-content h4 , .tech-stack-content h5 , .project-heading h4 , .experience-content h4{
+    font-size: 18px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.overview-content h2 , .tech-stack-content h2 , .project-heading h2 , .experience-content h2 {
+    font-size: 48px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.overview-content p{
+    margin: 0 0 1.5rem; 
+
+}
+.footer-content .footer-title{
+    font-size: 28px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.tech-skill-container , .rfm-marquee-container {
+    padding-top: 1rem;
+}
+.footer-content .footer-description{
+    line-height: 1.3;
+    margin-top: 0;
+}
+.mobile-nav{
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .header-nav {
+        display: none;
+        position: absolute;
+        top: 15%;
+        right: 0;
+    }
+    .nav-list {
+        list-style: none;
+        padding: 0;
+        flex-direction: column;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    .header-wrapper {
+        padding: 1rem 1rem;
+    }
+    .mobile-nav img {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    .dev-title {
+        font-size: 16px;
+    }
+    .hero-banner-content {
+        top: 18%;
+        left: 5%;
+    }
+    .hero-banner-content h3 {
+        font-size: 22px;
+    }
+    .hero-banner-content p {
+        font-size: 18px;
+    }
+    .overview-content {
+        width: 100%;
+    }
+    .hero-banner-content h2 {
+        font-size: 30px;
+        margin: 0;
+    }
+    .skill {
+        height: 10rem;
+        width: 47%;
+        padding: 10px;
+    }
+    .overview-skill-wrapper{
+        row-gap: 1rem;
+    }
+    .projects-rfm {
+        width: 10rem;
+    }
+    .rfm-child {
+        margin-right: 1rem;
+    }
+    .journey-data , .experience-journey-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+    .footer-wrapper{
+        max-width: 95%;
+        padding: 3rem 0 3rem;
+    }
+    .overview-content h2, .tech-stack-content h2, .project-heading h2, .experience-content h2 {
+        font-size: 38px;
+    }
+    .portfolio-img img {
+        width: 15rem;
+        height: 100%;
+        object-fit: cover;
+    }
+    .overview-wrapper, .tech-stack-wrapper, .project-container, .experience-wrapper, .experience-journey-wrapper, .projects-rfm-wrapper {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+    }
+    .skill-icon img, .tech-skill img {
+        width: 3rem;
+        height: 3rem;
+    }
+    .tech-skill-container{
+        gap: 1rem;
+    }
+    .footer-content {
+        width: 85%;
+        max-width: 100%;
+    }
+    .footer-content .footer-title {
+        font-size: 28px;
+        margin:0 0 1rem;
+    }
+    .footer-description {
+        text-align: justify;
+    }
+    p.social-icons {
+        margin: 1rem 0;
+    }
+    .tech-stack {
+        padding: 1rem 0;
+    }
+    .journey-data:last-child{
+        /* margin-bottom: 0; */
+    }
+
+
+
+
+
+    .tech-skill-container , .overview-skill-wrapper{
+        flex-wrap: wrap;
+    }
+    
+}

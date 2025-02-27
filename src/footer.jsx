@@ -1,0 +1,23 @@
+export default function Footer(){
+    return(
+        <div className="footer-container background-white" id="contact">
+            <div className="footer-wrapper">
+                <div className="footer-content color-black">
+                    <h2 className="footer-title">Get In Touch</h2>
+                    <p className="footer-description"> Based in Lahore, Pakistan. For inquiries or collaborations, feel free to <a  className="color-black" href="tel:+923234990862" aria-label="Phone Number">shedule a call</a> or email <a className="color-black" href="mailto:hassanlatif1620@gmail.com" aria-label="Email">@hassanlatif.com</a>. </p>
+                    <p className="social-icons flex align-center gap-1 justify-center">
+                        <a href="https://linkedin.com/in/hassan-latif-530968243/" target="blank" aria-label="Linkedin">
+                            <img src="./src/assets/linkedin-custom.svg" alt="Linkedin" />
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=923234990862&text=Hello, Hassan" target="blank" aria-label="Whatsapp">
+                            <img src="./src/assets/whatsapp-custom.svg" alt="Whatsapp" />
+                        </a>
+                        <a href="mailto:hassanlatif1620@gmail.com" target="blank" aria-label="Gmail">
+                            <img src="./src/assets/gmail icon-3.png" alt="Gmail" />
+                        </a>
+                    </p>
+                </div>
+            </div>  
+        </div>
+    )
+}
