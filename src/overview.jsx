@@ -14,7 +14,7 @@ export default function OverView() {
                     <div className="skill skill-1 flex align-center justify-center">
                         <div className="skill-box color-white">
                             <div className="skill-icon">
-                                <img src="./src/assets/shopify-icon.png" alt="Shopify Developer" />
+                                <img src="/assets/shopify-icon.png" alt="Shopify Developer" />
                             </div>
                             <div className="skill-name">
                                 Shopify Theme Developer
@@ -25,7 +25,7 @@ export default function OverView() {
                     <div className="skill skill-2 flex align-center justify-center">
                         <div className="skill-box color-white">
                             <div className="skill-icon">
-                                <img src="./src/assets/front-end.png" alt="Front End Developer" />
+                                <img src="/assets/front-end.png" alt="Front End Developer" />
                             </div>
                             <div className="skill-name">
                                 Front End Developer
@@ -36,7 +36,7 @@ export default function OverView() {
                     <div className="skill skill-3 flex align-center justify-center">
                         <div className="skill-box color-white">
                             <div className="skill-icon">
-                                <img src="./src/assets/js-developer.png" alt="Js Developer" />
+                                <img src="/assets/js-developer.png" alt="Js Developer" />
                             </div>
                             <div className="skill-name">
                                 JS Developer
@@ -47,7 +47,7 @@ export default function OverView() {
                     <div className="skill skill-4 flex align-center justify-center">
                         <div className="skill-box color-white">
                             <div className="skill-icon">
-                                <img src="./src/assets/web-app-icon.png" alt="Web App Developer" />
+                                <img src="/assets/web-app-icon.png" alt="Web App Developer" />
                             </div>
                             <div className="skill-name">
                                 Web App Developer

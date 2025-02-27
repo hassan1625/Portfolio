@@ -2,15 +2,15 @@ import Marquee from "react-fast-marquee";
 
 export default function ProjectsRfm(){
     const slideImages =[
-        {title:"Ethnc", image:"./src/assets/Ethnc.jpg",alt:"https://ethnc.com/",type:'Shopify Plus'},
-        {title:"Images1993", image:"./src/assets/images1993.jpg",alt:"https://image1993.com/",type:'Shopify Plus'},
-        {title:"Nuriyaa", image:"./src/assets/nuriyaa.jpg",alt:"https://www.nuriyaa.com/",type:'Shopify'},
-        {title:"Maryam N Maria UAE", image:"./src/assets/maryamnmariauae.jpg",alt:"https://maryumnmariauae.com/",type:'Shopify Plus'},
-        {title:"Outfitters", image:"./src/assets/outfitters.jpg",alt:"https://outfitters.com.pk/",type:'Shopify Plus'},
-        {title:"Sparx Mobile", image:"./src/assets/sparx.jpg",alt:"https://sparx.pk/",type:'Shopify'},
-        {title:"Vyntage Horology", image:"./src/assets/vyntage horology.jpg",alt:"https://vyntage.com/",type:'Shopify'},
-        {title:"Pathner Tires", image:"./src/assets/panther tires.jpeg",alt:"https://shop.panthertyres.com/",type:'Shopify'},
-        {title:"Mobi CMS", image:"./src/assets/mobi cms.jpg",alt:"",type:'Vue'},
+        {title:"Ethnc", image:"/assets/Ethnc.jpg",alt:"https://ethnc.com/",type:'Shopify Plus'},
+        {title:"Images1993", image:"/assets/images1993.jpg",alt:"https://image1993.com/",type:'Shopify Plus'},
+        {title:"Nuriyaa", image:"/assets/nuriyaa.jpg",alt:"https://www.nuriyaa.com/",type:'Shopify'},
+        {title:"Maryam N Maria UAE", image:"/assets/maryamnmariauae.jpg",alt:"https://maryumnmariauae.com/",type:'Shopify Plus'},
+        {title:"Outfitters", image:"/assets/outfitters.jpg",alt:"https://outfitters.com.pk/",type:'Shopify Plus'},
+        {title:"Sparx Mobile", image:"/assets/sparx.jpg",alt:"https://sparx.pk/",type:'Shopify'},
+        {title:"Vyntage Horology", image:"/assets/vyntage horology.jpg",alt:"https://vyntage.com/",type:'Shopify'},
+        {title:"Pathner Tires", image:"/assets/panther tires.jpeg",alt:"https://shop.panthertyres.com/",type:'Shopify'},
+        {title:"Mobi CMS", image:"/assets/mobi cms.jpg",alt:"",type:'Vue'},
     ]
     return(
         <div className="projects-rfm-container background-white" id="Projects">

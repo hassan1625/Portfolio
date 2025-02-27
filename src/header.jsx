@@ -17,7 +17,7 @@ export default function Header() {
                     </nav>
                 </div>
                 <div className="mobile-nav">
-                    <img src="./src/assets/menu-hamburger.svg" alt="" />
+                    <img src="/assets/menu-hamburger.svg" alt="" />
                 </div>
             </div>
         </header>
