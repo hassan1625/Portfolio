@@ -125,6 +125,10 @@ header {
     width: 35rem;
     height: 100%;
     object-fit: cover;
+    transition: transform 1s ease-in-out;
+}
+.portfolio-img:hover img {
+    transform: scale(1.2);
 }
 .hero-banner-container , .about-me-ccontainer , .overview-wrapper , .tech-stack-wrapper , .project-container , .experience-wrapper , .experience-journey-wrapper ,  .shopify-skill-wrapper {
     max-width: 80%;
@@ -180,13 +184,19 @@ header {
     list-style: none;
     flex-wrap: wrap;
     text-align: start;
+    padding-top: 1rem; 
 }
 .shopify-skill {
     padding: 1.5rem;
     border-bottom: 1px solid;
+    cursor: pointer;
 }
 .shopify-skill-content {
     padding: 2.5rem 0 0;
+}
+.shopify-skill:hover {
+    background: #f28e1c;
+    color: #1b3a4b;
 }
 .text-start{
     text-align: start;
@@ -244,6 +254,11 @@ h2.journey-designation {
     border: 1px solid #f28e1c;
     margin-bottom: 4rem;
     padding: 0.8rem 1rem;
+    cursor: pointer;
+}
+.journey-data:hover {
+    color: #122635;
+    background: #f28e1c;
 }
 .footer-wrapper {
     max-width: 80%;
