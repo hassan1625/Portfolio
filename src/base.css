@@ -28,27 +28,37 @@
 .width-50{
     width: 50%;
 }
+.width-30{
+    width: 30%;
+}
+.width-70{
+    width: 70%;
+}
 .fw-7{
     font-weight: 700;
 }
 .background-white{
-    background: #fff;
+    /* background: #fff; */
 }
 .background-black{
-    background: #000;
+    /* background: #000; */
 }
 .color-black{
-    color:#000;
+    /* color:#000; */
+    color:#fff;
 }
 .color-white{
     color: #fff;
+}
+.color-orange{
+    color: #f28e1c;
 }
 header {
     position: relative;
     z-index: 10;
 }
 .header-wrapper {
-    padding: 1rem 3rem;
+    padding: 2rem 5rem;
     position: fixed;
     top: 0;
     width: 100%;
@@ -73,16 +83,20 @@ header {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: #101010ed;
+    /* background: #101010ed; */
+    background: linear-gradient(233deg, #0d1b2a, #1b3a4b, #145b6f);
     top: 0;
     bottom: 0;
     z-index: 3;
 }
+.hero-banner-warpper {
+    padding-top: 10rem;
+}
 .hero-banner-content {
-    position: absolute;
+    /* position: absolute;
     top: 40%;
     left: 10%;
-    transform: translate(-10%,-40%);
+    transform: translate(-10%,-40%); */
     z-index: 5;
     text-align: start;
 }
@@ -96,24 +110,46 @@ header {
 }
 .hero-banner-content p {
     font-size: 20px;
-    margin: 0;
+    margin: 10px 0;
 }
 .portfolio-img {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     right: 0;
+    bottom: 15%;
+    right: 5%; */
     z-index: 5;
     transform: translate(0px, 0px);
 }
 .portfolio-img img {
-    width: 20rem;
+    width: 35rem;
     height: 100%;
     object-fit: cover;
 }
-.overview-wrapper , .tech-stack-wrapper , .project-container , .experience-wrapper , .experience-journey-wrapper , .projects-rfm-wrapper{
+.hero-banner-container , .about-me-ccontainer , .overview-wrapper , .tech-stack-wrapper , .project-container , .experience-wrapper , .experience-journey-wrapper ,  .shopify-skill-wrapper {
     max-width: 80%;
     margin: 0 auto;
     padding: 3rem 0;
+}
+.projects-rfm-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.about-me-intro {
+    width: 60%;
+    text-align: justify;
+}
+.about-me-img {
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgb(13 27 42), 0 6px 20px rgb(18 111 161), 0 8px 30px rgb(20 91 111);
+    margin-bottom: 3rem;
+}
+.about-me-img img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+    border-radius: 50%;
 }
 .experience-content {
     padding: 2rem 0;
@@ -124,6 +160,10 @@ header {
     border-radius: 15px;
     height: 15rem;
     width: 20%;
+    cursor: pointer;
+}
+.skill:hover{
+    background-color: #145b6f;
 }
 .skill-icon img , .tech-skill img{
     width: 4rem;
@@ -131,6 +171,22 @@ header {
 }
 .overview-content {
     text-align: start;
+}
+.tech-skill-wrapper {
+    margin-top: 2rem;
+}
+.shopify-skill-list {
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: start;
+}
+.shopify-skill {
+    padding: 1.5rem;
+    border-bottom: 1px solid;
+}
+.shopify-skill-content {
+    padding: 2.5rem 0 0;
 }
 .text-start{
     text-align: start;
@@ -141,11 +197,15 @@ header {
 .text-center{
     text-align: center;
 }
+.project-heading h2{
+    padding-bottom: 2rem;
+}
 img.project-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     aspect-ratio: 4/6;
+    border-radius: 10px;
 }
 span.type-badge {
     position: absolute;
@@ -173,14 +233,15 @@ span.journey-line {
     position: absolute;
     top: 58%;
     left: 50%;
-    background: rgb(255, 255, 255);
+    /* background: rgb(255, 255, 255); */
+    background: #f28e1c;
 }
 h2.journey-designation {
     margin: 0;
 }
 .journey-data {
     width: 60%;
-    border: 1px solid white;
+    border: 1px solid #f28e1c;
     margin-bottom: 4rem;
     padding: 0.8rem 1rem;
 }
@@ -209,12 +270,12 @@ p.social-icons {
     width: 80%;
     text-align: justify;
 }
-.overview-content h4 , .tech-stack-content h5 , .project-heading h4 , .experience-content h4{
+.overview-content h4 , .tech-stack-content h5 , .project-heading h4 , .experience-content h4 , .about-me-intro h4{
     font-size: 18px;
     margin: 0;
     text-transform: uppercase;
 }
-.overview-content h2 , .tech-stack-content h2 , .project-heading h2 , .experience-content h2 {
+.overview-content h2 , .tech-stack-content h2 , .project-heading h2 , .experience-content h2 , .about-me-head h2 , .about-me-intro h2{
     font-size: 48px;
     margin: 0;
     text-transform: uppercase;
@@ -239,11 +300,19 @@ p.social-icons {
     display: none;
 }
 @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 2.8em;
+        line-height: 1.1;
+    }
+    .overview-content h2, .tech-stack-content h2, .project-heading h2, .experience-content h2, .about-me-head h2, .about-me-intro h2 {
+        font-size: 36px;
+    }
     .header-nav {
         display: none;
         position: absolute;
         top: 75%;
-        right: 10%;
+        right: 3%;
+        transform: translate(-3%, 0);
         background: #fff;
         padding: 1rem 2rem;
         border-radius: 5px;
@@ -267,17 +336,19 @@ p.social-icons {
     }
     .header-wrapper {
         padding: 1rem 1rem;
+        position: unset;
     }
     .mobile-nav img {
         width: 1.5rem;
         height: 1.5rem;
     }
     .dev-title {
-        font-size: 16px;
+        font-size: 22px;
     }
     .hero-banner-content {
-        top: 18%;
-        left: 5%;
+        /* top: 18%;
+        left: 5%; */
+        padding-left: 1rem;
     }
     .hero-banner-content h3 {
         font-size: 22px;
@@ -318,11 +389,12 @@ p.social-icons {
         font-size: 38px;
     }
     .portfolio-img img {
-        width: 15rem;
+        width: 20rem;
         height: 100%;
+        margin-left: 4rem;
         object-fit: cover;
     }
-    .overview-wrapper, .tech-stack-wrapper, .project-container, .experience-wrapper, .experience-journey-wrapper, .projects-rfm-wrapper {
+    .overview-wrapper, .tech-stack-wrapper, .project-container, .experience-wrapper, .experience-journey-wrapper, .about-me-ccontainer , .hero-banner-container{
         max-width: 90%;
         margin: 0 auto;
         padding: 2rem 0;
@@ -350,6 +422,32 @@ p.social-icons {
     }
     .journey-data:last-child{
         /* margin-bottom: 0; */
+    }
+    .about-me-content , .hero-banner-warpper{
+        flex-direction: column;
+    }
+    .about-me-intro{
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .shopify-skill-wrapper , .projects-rfm-wrapper {
+        max-width: 100%;
+        margin: 0;
+        width: 100%;
+    }
+    .hero-banner-warpper{
+        padding-top: 5rem;
+    }
+    .shopify-skill {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .shopify-skill .skill-details {
+        width: 100%;
+        padding: 5px 0;
+    }
+    .shopify-skill-wrapper{
+        padding: 1rem 0;
     }
 
 

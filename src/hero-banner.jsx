@@ -8,7 +8,7 @@ export default function HeroBanner() {
                     <img className="image" src="./assets/world-map.jpeg" alt="Hero Banner" />
                     <div className="hero-banner-overlay overlay"></div>
                 </div>
-                <div className="hero-banner-content color-white" data-aos="zoom-in-right">
+                <div className="hero-banner-content color-orange" data-aos="zoom-in-right">
                     <h3>Hi I am</h3>
                     <h2>Muhammad Hassan Latif</h2>
                     <p>Software Engineer | Shopify Developer | Js Developer</p>

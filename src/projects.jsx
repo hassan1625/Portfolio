@@ -23,7 +23,7 @@ export default function Projects() {
       <>
       <div className='project-container'>
         <div className='project-heading text-start'>
-            <h4>Case Studies</h4>
+            <h5>Case Studies</h5>
             <h2>Projects</h2>
         </div>
         <div className='project-swiper-container'>
